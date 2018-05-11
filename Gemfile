@@ -50,5 +50,16 @@ group :development do
   gem 'spring-watcher-listen', '~> 2.0.0'
 end
 
+# 추가할 젬
+# Use Capistrano for deployment
+gem 'capistrano-rbenv', '~> 2.0'
+gem 'capistrano-rbenv-install', '~> 1.2.0'
+gem 'capistrano-rails', group: :development
+gem 'capistrano3-puma' , group: :development
+gem 'capistrano-figaro-yml', '~> 1.0.2'
+gem 'capistrano-upload-config'
+gem 'capistrano3-nginx', '~> 2.0'
+gem 'capistrano-rails-collection'
+
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem
 gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
